@@ -3,11 +3,30 @@
     padding: 0;
 }
 
-header {
-    background-color: rgb(27, 18, 3);
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #CF5F4B;
 }
 
-header img {
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+header {
+    background-color: #000;
+    max-width: 100%;
+}
+
+header > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -17,5 +36,68 @@ header img {
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem;
 }
+
+nav a:link {
+    text-decoration: none;
+    color: #F4DBD6;
+}
+nav a:visited {
+    text-decoration: none;
+    color: #F4DBD6;
+}
+nav a:hover {
+    text-decoration: none;
+    color: #CF5F4B;
+}
+nav a:active {
+    text-decoration: none;
+    color: #F4DBD6;
+}
+
+main {
+    margin: 3rem 5% 3rem 5%;
+    flex: 1;
+}
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+.card {
+    background-color:#F4DBD6;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.card p {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    background-color: #000;
+    max-width: 100%;
+}
+
+footer div {
+    flex: 1;
+}
+
+footer div p {
+    color: #fff;
+}
+
+footer div > img {
+    max-width: 300px;
+}
+

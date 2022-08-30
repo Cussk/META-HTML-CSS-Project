@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+header {
+    background-color: rgb(27, 18, 3);
+}
+
 header img {
     display: block;
     margin-left: auto;
@@ -10,7 +14,8 @@ header img {
     max-width: 200px;
 }
 
-nav {
+nav ul{
     list-style: none;
-    
+    display: flex;
+    justify-content: center;
 }
